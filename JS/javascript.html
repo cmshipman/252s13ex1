@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+//validates the input for street address 1
+function validateForm()
+{
+var x=document.forms["Street Address 1"]["street1"].value;
+if (x==null | | x=="")
+	{
+	alert("Street Adress 1 must be filled out!");
+	return false;
+	}
+}
+</script>
+</head>
+
+<body>
+<form name="Street Address 1" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+Street Address 1: <input type="text" name="street1">	
